@@ -31,7 +31,7 @@ const TopSell = () => {
     }, [])
 
     return <div className="card">
-        <h3>Top Selling Items</h3>
+        <h3>Articles les plus vendus</h3>
         <div className="topSellContainer">
         {
             loading ? <Spin /> :
@@ -40,7 +40,7 @@ const TopSell = () => {
                     <img src={item.photo} alt="" />
                 </div>
                 <h3>{item.name}</h3>
-                <h4><span>Total Sold: </span>{item.total}</h4>
+                <h4><span>Vente totale : </span>{item.total}</h4>
             </div>)
         }
     </div>

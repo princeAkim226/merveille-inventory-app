@@ -32,17 +32,17 @@ const Purchase = () => {
     }, [])
 
     return <div className="card">
-        <h3>Purchases</h3>
+        <h3>Achats</h3>
 
         <div className="puchases">
             <div className="content">
                 <div className="title">{data?.price}</div>
-                <div className="info">(price)</div>
+                <div className="info">(prix)</div>
             </div>
             <br />
             <div className="content">
                 <div className="title">{data?.count}</div>
-                <div className="info">(count)</div>
+                <div className="info">(Nombre)</div>
             </div>
         </div>
     </div>

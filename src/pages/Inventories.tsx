@@ -50,27 +50,27 @@ const Inventories:FC = () => {
         key: 'photoInfo',
       },
       {
-        title: 'Name',
+        title: 'Nom',
         dataIndex: 'name',
         key: 'name',
       },
       {
-        title: 'Category',
+        title: 'Catégorie',
         dataIndex: 'groupInfo',
         key: 'groupInfo',
       },
       {
-        title: 'Price',
+        title: 'Prix',
         dataIndex: 'price',
         key: 'price',
       },
       {
-        title: 'Remaining',
+        title: 'Restant',
         dataIndex: 'remaining',
         key: 'remaining',
       },
       {
-        title: 'Added On',
+        title: 'Ajouté le',
         dataIndex: 'created_at',
         key: 'created_at',
       },
@@ -91,13 +91,13 @@ const Inventories:FC = () => {
 
     return (
       <ContentLayout
-        pageTitle="Inventory"
+        pageTitle="Inventaire"
         setModalState={() => setModalState(ModalState.addItem)}
         dataSource={(formatInventoryPhoto(inventories) as unknown) as DataProps[]}
         columns={columns}
         fetching={fetching}
         customName="Inventories"
-        extraButton={<Button type='primary' onClick={() => setModalState(ModalState.addItemCSV)}>Add items (CSV)</Button>}
+        extraButton={<Button type='primary' onClick={() => setModalState(ModalState.addItemCSV)}>Ajouter des articles(CSV)</Button>}
       >
         <AddInventoryForm 
           onSuccessCallBack={onCreateInventory} 

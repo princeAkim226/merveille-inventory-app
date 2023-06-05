@@ -72,13 +72,13 @@ const AddUserForm:FC<FormModalProps> =  ({
                         message: 'Please select a role!' }]}
                     >
                     <Select placeholder="Role">
-                        <Option value="admin">Admin</Option>
-                        <Option value="creator">Creator</Option>
-                        <Option value="sale">Sale</Option>
+                        <Option value="admin">Administrateur</Option>
+                        <Option value="creator">Créateur</Option>
+                        <Option value="sale">vendeur</Option>
                     </Select>
                 </Form.Item>
                 <Form.Item>
-                    <Button htmlType="submit" type="primary" block loading={loading}>Submit</Button>
+                    <Button htmlType="submit" type="primary" block loading={loading}>Soumettre</Button>
                 </Form.Item>
             </Form>
         </Modal>

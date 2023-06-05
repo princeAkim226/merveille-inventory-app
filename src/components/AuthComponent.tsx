@@ -15,7 +15,7 @@ interface AuthComponentProps {
 }
 
 const AuthComponent: FC<AuthComponentProps> = ({
-    titleText = "Sign In",
+    titleText = "S'identifier",
     isPassword = true,
     bottonText = "Login",
     linkText = "New User?",

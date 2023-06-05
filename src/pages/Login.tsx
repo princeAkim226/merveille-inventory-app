@@ -21,21 +21,21 @@ const Login: FC = () => {
             history.push("/")
         }
     })
-
+    
     const onSubmit = async (values: DataProps) => {
-       setLoading(true)
-       const response = await axiosRequest<LoginDataProps>({
-           method:"post",
-           url: LoginUrl,
-           payload: values,
-           errorObject: {
-               message: "Login Error"
-           }
-       })
-       if(response){
-           localStorage.setItem(tokenName, response.data.access)
+        setLoading(true)
+        const response = await axiosRequest<LoginDataProps>({
+            method:"post",
+            url: LoginUrl,
+            payload: values,
+            errorObject: {
+                message: "Login Error"
+            }
+        })
+        if(response){
+            localStorage.setItem(tokenName, response.data.access)
            history.push("/")
-       }
+        }
        setLoading(false)
     }
 

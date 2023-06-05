@@ -63,7 +63,7 @@ const SaleByShop = () => {
     };
 
     return <div className="card">
-        <h3>Sales By Shop</h3>
+        <h3>Ventes par boutique</h3>
         <div className="pieUI">
             {loading ? <Spin /> : <Pie data={getChartData()} options={pieOptions} />}
         </div>

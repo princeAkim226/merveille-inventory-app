@@ -16,7 +16,7 @@ const AuthRoute: FC = ({children}) => {
     })
 
     if(loading){
-        return <i>loading...</i>
+        return <i>chargement...</i>
     }
 
     return <Layout>

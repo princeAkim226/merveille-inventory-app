@@ -9,7 +9,7 @@ const PrintOut:FC<{data: InvoiceCreationProps[]}> = ({data}) => {
 
     return <div style={{width: '250px'}}>
         {stars}
-        <h3 style={{textAlign: 'center'}}>INVOICE</h3>
+        <h3 style={{textAlign: 'center'}}>FACTURE</h3>
         {stars}
         <div style={{display: 'flex', alignItems:"center", 
                 justifyContent:"space-between", fontSize: '11px', 
@@ -43,7 +43,7 @@ const PrintOut:FC<{data: InvoiceCreationProps[]}> = ({data}) => {
                 justifyContent:"space-between", fontSize: '15px', marginBottom: "5px",
                 borderTop:"1px solid #c3c3c3", paddingTop: '20px'}}>   
             <div>
-                Total Amount:
+            Montant total:
             </div>
             <div>
                 {getTotal(data)}

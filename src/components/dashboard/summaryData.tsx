@@ -14,22 +14,22 @@ interface SummaryDataProps {
 
 const tempSummary:SummaryDataProps  = {
     "total_inventory": {
-        title: "Total Items",
+        title: "Articles au total",
         count: 0,
         icon: <span className="dashIcon inventory"><Inventory /></span>
     },
     "total_group": {
-        title: "Total Groups",
+        title: "Groupes totaux",
         count: 0,
         icon: <span className="dashIcon group"><Group /></span>
     },
     "total_shop": {
-        title: "Total Shops",
+        title: "Nombre total de boutiques",
         count: 0,
         icon: <span className="dashIcon shop"><Shop /></span>
     },
     "total_users": {
-        title: "Total Users",
+        title: "Nombre total d'utilisateurs",
         count: 0,
         icon: <span className="dashIcon user"><UserGroup /></span>
     },

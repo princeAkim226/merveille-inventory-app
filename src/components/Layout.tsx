@@ -33,16 +33,16 @@ const Layout:FC = ({children}) => {
             <div className="rightNav">
                 <div className="userAvatar">
                     <img src={User} alt="user" />
-                    <div className="text">Adefemigreat</div>
+                    <div className="text">Merveille</div>
                 </div>
                 <div className="rightItem">
                     <Link to="/invoice-section">
                         <div className="newInvoiceButton">
-                            New Invoice
+                        Nouvelle facture
                         </div>
                     </Link>
                     <div className="logoutButton">
-                        <div className="text" onClick={logout}>Logout</div>
+                        <div className="text" onClick={logout}>Se déconnecter</div>
                     </div>
                 </div>
             </div>
@@ -59,37 +59,37 @@ const Layout:FC = ({children}) => {
                     <Link to="/groups">
                         <li className={isActive("/groups")}>
                             <Group />
-                            <div className="text">Groups</div>
+                            <div className="text">Groupes</div>
                         </li>
                     </Link>
                     <Link to="/inventories">
                         <li className={isActive("/inventories")}>
                             <Inventory />
-                            <div className="text">Inventories</div>
+                            <div className="text">Inventaires</div>
                         </li>
                     </Link>
                     <Link to="/shops">
                         <li className={isActive("/shops")}>
                             <Shop />
-                            <div className="text">Shops</div>
+                            <div className="text">Magasins</div>
                         </li>
                     </Link>
                     <Link to="/invoices">
                         <li className={isActive("/invoices")}>
                             <Invoice />
-                            <div className="text">Invoices</div>
+                            <div className="text">Factures</div>
                         </li>
                     </Link>
                     <Link to="/users">
                         <li className={isActive("/users")}>
                             <UserGroup />
-                            <div className="text">Users</div>
+                            <div className="text">Utilisateurs</div>
                         </li>
                     </Link>
                     <Link to="/user-activities">
                         <li className={isActive("/user-activities")}>
                             <Activities />
-                            <div className="text">User Activities</div>
+                            <div className="text">Activités de l'utilisateur</div>
                         </li>
                     </Link>
                 </ul>

@@ -75,7 +75,7 @@ const AddInventoryForm:FC<AddInventoryFormProps> =  ({
 
     return (
         <Modal 
-            title="Add Inventory Item" 
+            title="Ajouter un article d'inventaire" 
             visible={isVisible} 
             onCancel={onClose}
             footer={false}
@@ -83,7 +83,7 @@ const AddInventoryForm:FC<AddInventoryFormProps> =  ({
             >
             <Form layout="vertical" onFinish={onSubmit} form={form}>
                 <Form.Item
-                    label="Item Photo"
+                    label="Photo"
                 >
                     <div 
                         className="imageView" 
@@ -99,38 +99,38 @@ const AddInventoryForm:FC<AddInventoryFormProps> =  ({
                         onChange={handleFileChange} />
                 </Form.Item>
                 <Form.Item 
-                    label="Name"
+                    label="Nom"
                     name="name"
                     rules={[{ 
                         required: true, 
                         message: 'Please input group name!' }]}
                     >
-                    <Input placeholder="Item name"/>
+                    <Input placeholder="Nom de l'article"/>
                 </Form.Item>
                 <Form.Item 
-                    label="Count"
+                    label="Nombre"
                     name="total"
                     rules={[{ 
                         required: true, 
-                        message: 'Please input item count!' }]}
+                        message: "Veuillez entrer le nombre d'articles" }]}
                     >
                     <Input placeholder="Item count" type="number" min={1} />
                 </Form.Item>
                 <Form.Item 
-                    label="Individual Price ($)"
+                    label="Prix Individuel (F CFA)"
                     name="price"
                     rules={[{ 
                         required: true, 
-                        message: 'Please provide item individual price!' }]}
+                        message: "Veuillez fournir le prix individuel de l'article !" }]}
                     >
-                    <Input placeholder="Item price" type="number" min={1} />
+                    <Input placeholder="Prix ​​de l'article" type="number" min={1} />
                 </Form.Item>
                 <Form.Item 
-                    label="Group/Category"
+                    label="Groupe/Catégorie"
                     name="group_id"
                     >
                     <Select defaultValue="">
-                        <Option value="">Select a group</Option>
+                        <Option value="">Sélectionnez un groupe</Option>
                         {
                             groups.map(
                                 (item, index) => 
@@ -139,7 +139,7 @@ const AddInventoryForm:FC<AddInventoryFormProps> =  ({
                     </Select>
                 </Form.Item>
                 <Form.Item>
-                    <Button htmlType="submit" type="primary" block loading={loading}>Submit</Button>
+                    <Button htmlType="submit" type="primary" block loading={loading}>Soumettre</Button>
                 </Form.Item>
             </Form>
         </Modal>

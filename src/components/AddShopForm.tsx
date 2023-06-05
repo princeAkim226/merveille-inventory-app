@@ -54,7 +54,7 @@ const AddShopForm:FC<FormModalProps> =  ({
                     <Input placeholder="Name" type="text" />
                 </Form.Item>
                 <Form.Item>
-                    <Button htmlType="submit" type="primary" block loading={loading}>Submit</Button>
+                    <Button htmlType="submit" type="primary" block loading={loading}>Soumettre</Button>
                 </Form.Item>
             </Form>
         </Modal>

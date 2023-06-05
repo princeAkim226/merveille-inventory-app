@@ -35,7 +35,7 @@ const User:FC = () => {
         key: 'email',
       },
       {
-        title: 'Name',
+        title: 'Nom',
         dataIndex: 'fullname',
         key: 'fullname',
       },
@@ -45,17 +45,17 @@ const User:FC = () => {
         key: 'is_active',
       },
       {
-        title: 'Last Login',
+        title: 'Dernière connexion',
         dataIndex: 'last_login',
         key: 'last_login',
       },
       {
-        title: 'Role',
+        title: 'Rôle',
         dataIndex: 'role',
         key: 'role',
       },
       {
-        title: 'Created At',
+        title: 'Créé à',
         dataIndex: 'created_at',
         key: 'created_at',
       },

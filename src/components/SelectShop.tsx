@@ -25,7 +25,7 @@ const SelectShop:FC<SelectShopProps> =  ({
 
     return (
         <Modal 
-            title="Select Sale Shop" 
+            title="Sélectionnez la boutique de vente" 
             visible={isVisible} 
             onCancel={onClose}
             footer={false}
@@ -37,7 +37,7 @@ const SelectShop:FC<SelectShopProps> =  ({
                     name="shop_id"
                     >
                     <Select defaultValue="">
-                        <Option value="">Select a shop</Option>
+                        <Option value="">Sélectionnez une boutique</Option>
                         {
                             shops.map(
                                 (item, index) => 
@@ -46,7 +46,7 @@ const SelectShop:FC<SelectShopProps> =  ({
                     </Select>
                 </Form.Item>
                 <Form.Item>
-                    <Button htmlType="submit" type="primary" block>Submit</Button>
+                    <Button htmlType="submit" type="primary" block>Soumettre</Button>
                 </Form.Item>
             </Form>
         </Modal>

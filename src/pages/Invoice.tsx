@@ -23,17 +23,17 @@ const Invoice:FC = () => {
         key: 'id',
       },
       {
-        title: 'Created By',
+        title: 'Créé par',
         dataIndex: 'created_by_email',
         key: 'created_by_email',
       },
       {
-        title: 'Shop',
+        title: 'Boutique',
         dataIndex: 'shop_name',
         key: 'shop_name',
       },
       {
-        title: 'Created At',
+        title: 'Créé à',
         dataIndex: 'created_at',
         key: 'created_at',
       },
@@ -65,14 +65,14 @@ const Invoice:FC = () => {
     const pushActionToList = () => {
       return invoices.map(item => ({
         ...item,
-        action: <Button onClick={() => printData(item.invoice_items)}>Print</Button>
+        action: <Button onClick={() => printData(item.invoice_items)}>Imprimer</Button>
       }))
     }
 
     return (
         <>
           <ContentLayout
-            pageTitle="Invoice"
+            pageTitle="Facture"
             dataSource={(pushActionToList() as unknown) as DataProps[]}
             columns={columns}
             fetching={fetching}

@@ -22,22 +22,22 @@ const Groups:FC = () => {
         key: 'id',
       },
       {
-        title: 'Name',
+        title: 'Nom',
         dataIndex: 'name',
         key: 'name',
       },
       {
-        title: 'Belongs To (Another Group)',
+        title: 'Appartient à (un autre groupe)',
         dataIndex: 'belongsTo',
         key: 'belongsTo',
       },
       {
-        title: 'Created At',
+        title: 'Créé à',
         dataIndex: 'created_at',
         key: 'created_at',
       },
       {
-        title: 'Total Items',
+        title: 'Articles au total',
         dataIndex: 'total_items',
         key: 'total_items',
       },
@@ -56,7 +56,7 @@ const Groups:FC = () => {
 
     return (
       <ContentLayout
-        pageTitle="Group"
+        pageTitle="Groupe"
         setModalState={setModalState}
         dataSource={(groups as unknown) as DataProps[]}
         columns={columns}

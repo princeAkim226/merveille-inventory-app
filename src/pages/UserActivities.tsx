@@ -25,12 +25,12 @@ const UserActivities:FC = () => {
         key: 'action',
       },
       {
-        title: 'Performed By',
+        title: 'Interprété par',
         dataIndex: 'email',
         key: 'email',
       },
       {
-        title: 'Created At',
+        title: 'Créé à',
         dataIndex: 'created_at',
         key: 'created_at',
       },

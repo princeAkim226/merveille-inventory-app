@@ -45,7 +45,7 @@ const AddGroupForm:FC<AddGroupFormProps> =  ({
 
     return (
         <Modal 
-            title="Add Group" 
+            title="Ajouter un groupe" 
             visible={isVisible} 
             onCancel={onClose}
             footer={false}
@@ -53,7 +53,7 @@ const AddGroupForm:FC<AddGroupFormProps> =  ({
             >
             <Form layout="vertical" onFinish={onSubmit} form={form}>
                 <Form.Item 
-                    label="Name"
+                    label="Nom"
                     name="name"
                     rules={[{ 
                         required: true, 
@@ -62,11 +62,11 @@ const AddGroupForm:FC<AddGroupFormProps> =  ({
                     <Input placeholder="Group name"/>
                 </Form.Item>
                 <Form.Item 
-                    label="Belongs To"
+                    label="Appartient à"
                     name="belongs_to_id"
                     >
                     <Select defaultValue="">
-                        <Option value="">Select a group</Option>
+                        <Option value="">Sélectionnez un groupe</Option>
                         {
                             groups.map(
                                 (item, index) => 
@@ -75,7 +75,7 @@ const AddGroupForm:FC<AddGroupFormProps> =  ({
                     </Select>
                 </Form.Item>
                 <Form.Item>
-                    <Button htmlType="submit" type="primary" block loading={loading}>Submit</Button>
+                    <Button htmlType="submit" type="primary" block loading={loading}>Soumettre</Button>
                 </Form.Item>
             </Form>
         </Modal>

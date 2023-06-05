@@ -70,14 +70,14 @@ const AddInventoryFormCSV:FC<FormModalProps> =  ({
                         onChange={handleFileChange} />
                 </Form.Item>
 
-                <a href="/inventory_sample.csv" download>Click here to download sample file</a>
+                <a href="/inventory_sample.csv" download>Cliquez ici pour télécharger un exemple de fichier</a>
                 <div className="helperNote">
-                    NB. Do not inlude the header labels, they are just for reference.
+                NB. N'incluez pas les étiquettes d'en-tête, elles sont juste pour référence.
                 </div>
                 <br />
 
                 <Form.Item>
-                    <Button htmlType="submit" type="primary" block loading={loading}>Submit</Button>
+                    <Button htmlType="submit" type="primary" block loading={loading}>Soumettre</Button>
                 </Form.Item>
             </Form>
         </Modal>

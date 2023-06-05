@@ -81,17 +81,17 @@ const InvoiceCreation:FC = () => {
         key: 'photoInfo',
       },
       {
-        title: 'Name',
+        title: 'Nom',
         dataIndex: 'name',
         key: 'name',
       },
       {
-        title: 'Price',
+        title: 'Prix',
         dataIndex: 'price',
         key: 'price',
       },
       {
-        title: 'Remaining',
+        title: 'Restant',
         dataIndex: 'remaining',
         key: 'remaining',
       },
@@ -104,7 +104,7 @@ const InvoiceCreation:FC = () => {
 
     const invoice_columns = [
         {
-            title: 'Item',
+            title: 'Article',
             dataIndex: 'item',
             key: 'item',
           },
@@ -114,7 +114,7 @@ const InvoiceCreation:FC = () => {
             key: 'qty',
           },
           {
-            title: 'Price',
+            title: 'Prix',
             dataIndex: 'price',
             key: 'price',
           },
@@ -169,7 +169,7 @@ const InvoiceCreation:FC = () => {
 
         if(qtyFlag){
           notification.error({
-            message: "Not enough item remaining"
+            message: "Pas assez d'articles restants"
           })
           return
         }
@@ -243,7 +243,7 @@ const InvoiceCreation:FC = () => {
       if(response){
           notification.success({
               message:"Operation Success",
-              description: "Invoice created successfully"
+              description: "Facture créée avec succès"
           })
       }
       setCanPrintOut(true)
@@ -255,7 +255,7 @@ const InvoiceCreation:FC = () => {
     const getShopID = () => {
       if(invoiceData.length < 1){
         notification.error({
-          message:"You need to have an invoice item first"
+          message:"Vous devez d'abord avoir un élément de facture"
         })
         return
       }
@@ -271,7 +271,7 @@ const InvoiceCreation:FC = () => {
      <div className="invoice-creation">
          <div className="card">
             <div className="cardHeader">
-                <h1 className="headContent">Inventory Management</h1>
+                <h1 className="headContent">Gestion de l'inventaire</h1>
                 <div className="rightContent">
                     <div className="searchInput">
                         <input type="text" />
@@ -308,8 +308,8 @@ const InvoiceCreation:FC = () => {
             </div>
             <br />
             <div>
-              <Button type='primary' onClick={getShopID} loading={loading}>Save & Print</Button> &nbsp;&nbsp;
-              <Button danger onClick={clearInvoiceData}>Clear</Button>
+              <Button type='primary' onClick={getShopID} loading={loading}>Enregistrer et imprimer</Button> &nbsp;&nbsp;
+              <Button danger onClick={clearInvoiceData}>supprimer</Button>
             </div>
          </div>
          <SelectShop 
